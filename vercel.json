@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "budget_optimizer_api.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "budget_optimizer_api.py"
+    }
+  ]
+}
